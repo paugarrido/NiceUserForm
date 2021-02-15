@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#b388ff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewRegisterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textSize="70sp"
+            android:fontFamily="@font/comic_boys"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#d1c4e9"
+            android:layout_gravity="center"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldUsernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:hint="@string/username"
+            android:fontFamily="@font/comic_boys"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRegisterTitle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable = "@drawable/username"
+            app:errorEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1c4e9"
+            android:fontFamily="@font/comic_boys"
+            android:textSize="20sp"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldPasswordRegister"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable = "@drawable/password"
+            android:fontFamily="@font/comic_boys"
+            app:errorEnabled="true"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1c4e9"
+            android:inputType="textPassword"
+            android:fontFamily="@font/comic_boys"
+            android:textSize="20sp"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldRepeatPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:hint="@string/repeat_password"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable = "@drawable/password"
+            android:fontFamily="@font/comic_boys"
+            app:errorEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextRepeatPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d1c4e9"
+                android:inputType="textPassword"
+                android:fontFamily="@font/comic_boys"
+                android:textSize="20sp"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:hint="@string/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/comic_boys"
+            app:startIconDrawable = "@drawable/ic_baseline_email_24"
+            app:errorEnabled="true"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d1c4e9"
+                android:fontFamily="@font/comic_boys"
+                android:textSize="20sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:hint="@string/name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/comic_boys"
+            app:errorEnabled="true"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextNameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d1c4e9"
+                android:fontFamily="@font/comic_boys"
+                android:textSize="20sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldSurnames"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:hint="@string/surnames"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/comic_boys"
+            app:errorEnabled="true"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSurnamesRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d1c4e9"
+                android:fontFamily="@font/comic_boys"
+                android:textSize="20sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldBirthDate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:hint="@string/date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/comic_boys"
+            app:errorEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBirthDateRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d1c4e9"
+                android:fontFamily="@font/comic_boys"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            android:background="#d1c4e9"
+            android:theme="@style/SpinnerTheme"
+            android:textSize="20sp"
+            android:entries="@array/genders"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxTermps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/termps"
+            android:layout_marginRight="32sp"
+            android:layout_marginLeft="32sp"
+            app:buttonTint = "#d1c4e9"/>
+
+        <Button
+            android:id="@+id/RegisterScreenRegister"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginRight="16sp"
+            android:layout_marginLeft="16sp"
+            android:text="@string/register"
+            app:icon="@drawable/register"
+            android:textSize="30sp"
+            android:fontFamily="@font/comic_boys"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LoginScreenLogin"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/RegisterScreenLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp"
+            android:fontFamily="@font/comic_boys"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:icon="@drawable/log"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            app:layout_constraintTop_toBottomOf="@+id/textFieldPassword"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
