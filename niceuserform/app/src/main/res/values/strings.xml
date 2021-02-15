@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NiceUserForm</string>
+    <string name="register">REGISTER</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="title">NICE USER FORM</string>
+    <string name="repeat_password">REPEAT PASSWORD</string>
+    <string name="email">EMAIL</string>
+    <string name="name">NAME</string>
+    <string name="surnames">SURNAMES</string>
+    <string name="gender_pronoun">GENDER PRONOUN</string>
+    <string name="termps">Accept terms and conditions</string>
+    <string name="date">BIRTH DATE</string>
+    <string-array name="genders">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other gender</item>
+    </string-array>
+</resources>

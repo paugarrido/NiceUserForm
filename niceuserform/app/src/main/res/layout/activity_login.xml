@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#b388ff">
+
+    <TextView
+        android:id="@+id/textViewLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textSize="70sp"
+        android:fontFamily="@font/comic_boys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#d1c4e9"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:hint="@string/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginTitle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable = "@drawable/username"
+        android:fontFamily="@font/comic_boys">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1c4e9"
+            android:textSize="20sp"
+            android:fontFamily="@font/comic_boys"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldUsername"
+        app:startIconDrawable = "@drawable/password"
+        android:fontFamily="@font/comic_boys"
+        android:textSize="20sp"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1c4e9"
+            android:fontFamily="@font/comic_boys"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/LoginScreenLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="92dp"
+        android:layout_marginRight="16sp"
+        android:fontFamily="@font/comic_boys"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:icon="@drawable/log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldPassword" />
+
+    <Button
+        android:id="@+id/LoginScreenRegister"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16sp"
+        android:layout_marginLeft="16sp"
+        android:text="@string/register"
+        app:icon="@drawable/register"
+        android:textSize="30sp"
+        android:fontFamily="@font/comic_boys"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginScreenLogin"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/PasswordLostLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16sp"
+        android:layout_marginLeft="16sp"
+        android:text="@string/forgot_password"
+        android:textSize="20sp"
+        android:fontFamily="@font/comic_boys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginScreenRegister"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:gravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
